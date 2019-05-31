@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid CSS</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="container">
+      <div class="grid-12 grid-text">
+        <h1>Sistema de Grid</h1>
+        <p class="big">Esse sistema de grid utiliza <strong>float</strong> e foi idealizado para facilitar o desenvolvimento de <strong>interfaces responsivas</strong> e conta com uma distribuição de até <strong>12 colunas</strong>.</p>
+
+        <h2>Como usar</h2>
+        <p>O sistema de grid funciona a partir de um esquema de colunas dentro de um container que segura o conteúdo e tem como tamanho máximo <strong>960px</strong>. Cada coluna flutuará para a esquerda e tem um gutter de <strong>10px</strong> nas laterais via <code>padding</code>
+          <br />
+          Veja como funciona:</p>
+        <ul>
+          <li>As colunas devem ser adicionadas dentro de um <code>.container</code>.</li>
+          <li>O conteúdo das colunas devem iniciar com <code>.grid-*</code>, respeitando sempre o máximo de 12 colunas. Por exemplo, três colunas iguais usariam três <code>.grid-4</code>.</li>
+          <li> As colunas são definidas em um tamanho fixo de pixiel, sendo que cada coluna tem de base <strong>60px</strong>.</li>
+        </ul>
+
+        <h2>Responsivo</h2>
+        <p>São utilzadas 3 pontos de quebra utilizando Media Queries.</p>
+
+        <pre><span class="coment">/* Dispositivos Grandes (desktops, acima de 980px) */</span>
+<span class="coment">/* Sem Media Querie, pois é tamanho padrão */</span><br />
+<span class="coment">/* Dispositivos Médios (celulares e tablets, até 979px) */</span>
+<p>@media (min-width: 790px) and (max-width: 979px) { ... }</p>
+<span class="coment">/* Dispositivos Pequenos (celulares, até 789px) */</span>
+<p>@media (max-width: 789px) { ... }</p></pre>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid-12 grid-text">
+        <h1>Exemplo individual</h1>
+        <p>Abaixo segue o exemplo de cada coluna individualmente.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid-1">grid-1</div>
+    </div>
+    <div class="container">
+      <div class="grid-2">grid-2</div>
+    </div>
+    <div class="container">
+      <div class="grid-3">grid-3</div>
+    </div>
+    <div class="container">
+      <div class="grid-4">grid-4</div>
+    </div>
+    <div class="container">
+      <div class="grid-5">grid-5</div>
+    </div>
+    <div class="container">
+      <div class="grid-6">grid-6</div>
+    </div>
+    <div class="container">
+      <div class="grid-7">grid-7</div>
+    </div>
+    <div class="container">
+      <div class="grid-8">grid-8</div>
+    </div>
+    <div class="container">
+      <div class="grid-9">grid-9</div>
+    </div>
+    <div class="container">
+      <div class="grid-10">grid-10</div>
+    </div>
+    <div class="container">
+      <div class="grid-11">grid-11</div>
+    </div>
+    <div class="container">
+      <div class="grid-12">grid-12</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid-12 grid-text">
+        <h1>Exemplo agrupados horizontalmente</h1>
+        <p class="big">Sinta-se livre para organizar as colunas da forma como desejar, lembrando sempre de respeitar o limite do container a das colunas.</p>
+        
+        <h2>Tamanhos iguais</h2>
+        <p>Abaixo segue o exemplo colunas com tamanhos iguais.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+      <div class="grid-1">grid-1</div>
+    </div>
+
+    <div class="container">
+      <div class="grid-2">grid-2</div>
+      <div class="grid-2">grid-2</div>
+      <div class="grid-2">grid-2</div>
+      <div class="grid-2">grid-2</div>
+      <div class="grid-2">grid-2</div>
+      <div class="grid-2">grid-2</div>
+    </div>
+
+    <div class="container">
+      <div class="grid-3">grid-3</div>
+      <div class="grid-3">grid-3</div>
+      <div class="grid-3">grid-3</div>
+      <div class="grid-3">grid-3</div>
+    </div>
+
+    <div class="container">
+      <div class="grid-4">grid-4</div>
+      <div class="grid-4">grid-4</div>
+      <div class="grid-4">grid-4</div>
+    </div>
+
+    <div class="container">
+      <div class="grid-6">grid-6</div>
+      <div class="grid-6">grid-6</div>
+    </div>
+
+    <div class="container">
+      <div class="grid-12 grid-text">
+        <h2>Tamanhos diferentes</h2>
+        <p>Abaixo segue o exemplo colunas com tamanhos diferentes.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid-1">grid-1</div>
+      <div class="grid-11">grid-11</div>
+
+      <div class="grid-2">grid-2</div>
+      <div class="grid-10">grid-10</div>
+
+      <div class="grid-3">grid-3</div>
+      <div class="grid-9">grid-9</div>
+
+      <div class="grid-4">grid-4</div>
+      <div class="grid-8">grid-8</div>
+
+      <div class="grid-5">grid-5</div>
+      <div class="grid-7">grid-7</div>
+      
+      <div class="grid-2">grid-2</div>
+      <div class="grid-4">grid-4</div>
+      <div class="grid-6">grid-6</div>
+    </div>
+  </section>
+
+</body>
+
+</html>
