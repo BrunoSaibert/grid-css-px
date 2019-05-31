@@ -1,5 +1,5 @@
 # Como usar
-Baixe o arquivo [grid.css](https://github.com/BrunoSaibert/grid-css-px/blob/master/grid.css)
+Baixe apenas o arquivo [grid.css](https://github.com/BrunoSaibert/grid-css-px/blob/master/grid.css) e adicione no seu projeto.
 
 # Sistema de Grid
 Esse sistema de grid utiliza float e foi idealizado para facilitar o desenvolvimento de interfaces responsivas e conta com uma distribuição de até 12 colunas.
