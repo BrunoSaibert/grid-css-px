@@ -1,7 +1,10 @@
+# Como usar
+Baixe o arquivo [grid.css](https://github.com/BrunoSaibert/grid-css-px/blob/master/grid.css)
+
 # Sistema de Grid
 Esse sistema de grid utiliza float e foi idealizado para facilitar o desenvolvimento de interfaces responsivas e conta com uma distribuição de até 12 colunas.
 
-# Como usar
+# Descrição
 O sistema de grid funciona a partir de um esquema de colunas dentro de um container que segura o conteúdo e tem como tamanho máximo 960px. Cada coluna flutuará para a esquerda e tem um gutter de 10px nas laterais via padding 
 Veja como funciona:
 
